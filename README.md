@@ -1,4 +1,4 @@
-# FuncoesJs
+# FunçõesJs
 
 Este projeto tem como objetivo explicar como **definir e criar funções em JavaScript** utilizando os formatos:
 
