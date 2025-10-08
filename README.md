@@ -12,7 +12,6 @@ Este projeto tem como objetivo explicar como **definir e criar funções em Java
 
 ## Tipos de funções em JavaScript
 
-***
  ### 1. Function Declaration
 >É a forma mais tradicional de declarar funções.
 >Elas são **içadas (hoisted)**, ou seja, podem ser chamadas antes mesmo de serem definidas no código.
@@ -24,7 +23,9 @@ function saudacao(nome) {
 }
 
  //Uso
-console.log(saudacao("Maria")); // Olá, Maria!
+console.log(saudacao("Maria"));
+
+// Olá, Maria!
 ```
 
 - Vantagens: pode ser chamada em qualquer parte do código, mesmo antes da declaração.  
@@ -42,7 +43,9 @@ const soma = function (a, b) {
 };
 
 // Uso
-console.log(soma(5, 3)); // 8
+console.log(soma(5, 3));
+
+// 8
 ```
 
 - Vantagem: maior controle sobre o escopo da função.  
@@ -58,7 +61,9 @@ console.log(soma(5, 3)); // 8
 const multiplicar = (a, b) => a * b;
 
 // Uso
-console.log(multiplicar(4, 6)); // 24
+console.log(multiplicar(4, 6));
+
+// 24
 ````
 
 - Vantagens: sintaxe curta e limpa; ótima para callbacks e funções anônimas.  
