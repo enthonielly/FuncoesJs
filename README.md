@@ -13,9 +13,9 @@ Este projeto tem como objetivo explicar como **definir e criar funções em Java
 ## Tipos de funções em JavaScript
 
 ***
- >1. Function Declaration
->>É a forma mais tradicional de declarar funções.
->>Elas são **içadas (hoisted)**, ou seja, podem ser chamadas antes mesmo de serem definidas no código.
+ ### 1. Function Declaration
+>É a forma mais tradicional de declarar funções.
+>Elas são **içadas (hoisted)**, ou seja, podem ser chamadas antes mesmo de serem definidas no código.
 
 ```
  //Declaração
@@ -27,13 +27,13 @@ function saudacao(nome) {
 console.log(saudacao("Maria")); // Olá, Maria!
 ```
 
-*Vantagens: pode ser chamada em qualquer parte do código, mesmo antes da declaração.
-*Atenção: sobrescrevê-la pode causar problemas em códigos maiores.
+- Vantagens: pode ser chamada em qualquer parte do código, mesmo antes da declaração.  
+- Atenção: sobrescrevê-la pode causar problemas em códigos maiores.
 ***
 
- >2. Function Expression
->>A função é atribuída a uma variável ou constante.
->>Diferente da declaration, não sofre hoisting (só pode ser chamada após ser definida).
+ ### 2. Function Expression
+>A função é atribuída a uma variável ou constante.
+>Diferente da declaration, não sofre hoisting (só pode ser chamada após ser definida).
 
 ```
 // Expressão
@@ -45,13 +45,13 @@ const soma = function (a, b) {
 console.log(soma(5, 3)); // 8
 ```
 
-*Vantagem: maior controle sobre o escopo da função.
-*Atenção: precisa ser definida antes de ser usada.
+- Vantagem: maior controle sobre o escopo da função.  
+- Atenção: precisa ser definida antes de ser usada.
 ***
 
- >3. Arrow Function
->>Introduzidas no ES6, são funções mais curtas e modernas.
->>Além disso, não têm seu próprio 'this', herdando do contexto onde foram criadas.
+ ### 3. Arrow Function
+>Introduzidas no ES6, são funções mais curtas e modernas.
+>Além disso, não têm seu próprio 'this', herdando do contexto onde foram criadas.
 
 ```
 // Arrow Function
@@ -61,6 +61,6 @@ const multiplicar = (a, b) => a * b;
 console.log(multiplicar(4, 6)); // 24
 ````
 
-*Vantagens: sintaxe curta e limpa; ótima para callbacks e funções anônimas.
-*Atenção: não podem ser usadas como construtoras (com new); cuidado ao usar com objetos que dependem de 'this'.
+- Vantagens: sintaxe curta e limpa; ótima para callbacks e funções anônimas.  
+- Atenção: não podem ser usadas como construtoras (com new); cuidado ao usar com objetos que dependem de 'this'.
 ***
